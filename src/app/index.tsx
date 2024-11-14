@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { Age, Counter, ImageComponent, Name, PressableComponent, SocialMedia, Subject } from "../components";
+import { Profile } from "../components";
 
 export default function Index() {
     return (
@@ -13,13 +13,15 @@ export default function Index() {
                 gap: "10px"
             }}
         >
-            <Name name="Hanish" />
-            <Age age={19} />
-            <SocialMedia platform="Instagram" username="hanish.dev" />
-            <Subject subject="Computer Science" />
-            <Counter />
-            <PressableComponent />
-            <ImageComponent />
+            <Profile
+                name="hanish.dev"
+                bio={`
+                • Software Engineer
+                • https://github.com/MuhdHanish
+                • https://www.linkedin.com/in/muhdhanish
+                `}
+                profile={require("../assets/Decrease_3.jpg")}
+            />
         </View>
     );
 };
