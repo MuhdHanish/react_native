@@ -8,3 +8,4 @@ export * from "./subject";
 export * from "./counter";
 export * from "./presseble-component";
 export * from "./image-component";
+export * from "./profile";
