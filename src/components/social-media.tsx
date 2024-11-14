@@ -7,5 +7,5 @@ export const SocialMedia = ({
     platform: string;
     username: string
 }) => {
-    return <TextComponent text={`Here is my ${platform} handle: ${username}`} />
+    return <TextComponent text={`Here is my ${platform} username: ${username}`} />
 };
