@@ -21,9 +21,17 @@ export default function Index() {
             default:
                 return "Evening";
         }
-    }
+    };
     return (
-        <View>
+        <View
+            style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flex: 1,
+                gap: "10px"
+            }}
+        >
             <Greet name="Hanish" />
             <TextComponent text={`Good ${getCurrentTime(currentHour)}`} />
         </View>
