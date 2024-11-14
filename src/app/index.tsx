@@ -1,20 +1,8 @@
 import React from "react";
 import { View } from "react-native";
-import { Clock, Greet, TextComponent } from "../components";
+import { Age, Clock, Greet, Name, SocialMedia, Subject, TextComponent } from "../components";
 
 export default function Index() {
-    const today = new Date();
-    const currentHour = today?.getHours();
-    const getCurrentTime = (hour: number) => {
-        switch (true) {
-            case (hour < 12):
-                return "Morning";
-            case (hour < 16):
-                return "Afternoon";
-            default:
-                return "Evening";
-        }
-    };
     return (
         <View
             style={{
@@ -25,9 +13,10 @@ export default function Index() {
                 gap: "10px"
             }}
         >
-            <Greet name="Hanish" />
-            <TextComponent text={`Good ${getCurrentTime(currentHour)}`} />
-            <Clock />
+            <Name name="Hanish" />
+            <Age age={19} />
+            <SocialMedia platform="Instagram" username="hanish.dev" />
+            <Subject subject="Computer Science"/>
         </View>
     );
 };
