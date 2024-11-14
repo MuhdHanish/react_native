@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { Age, Counter, Name, PressableComponent, SocialMedia, Subject } from "../components";
+import { Age, Counter, ImageComponent, Name, PressableComponent, SocialMedia, Subject } from "../components";
 
 export default function Index() {
     return (
@@ -18,7 +18,8 @@ export default function Index() {
             <SocialMedia platform="Instagram" username="hanish.dev" />
             <Subject subject="Computer Science" />
             <Counter />
-            <PressableComponent/>
+            <PressableComponent />
+            <ImageComponent />
         </View>
     );
 };
