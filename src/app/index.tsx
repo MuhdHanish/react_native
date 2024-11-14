@@ -1,6 +1,6 @@
 import React from "react";
-import { Pressable, Text, View } from "react-native";
-import { Age, Counter, Name, SocialMedia, Subject, TextComponent } from "../components";
+import { View } from "react-native";
+import { Age, Counter, Name, PressableComponent, SocialMedia, Subject } from "../components";
 
 export default function Index() {
     return (
@@ -18,21 +18,7 @@ export default function Index() {
             <SocialMedia platform="Instagram" username="hanish.dev" />
             <Subject subject="Computer Science" />
             <Counter />
-            <Pressable
-                onPress={() => alert("Pressable Pressed")}
-                onPressIn={() => alert("Pressable Press In")}
-                onPressOut={() => alert("Pressable Press Out")}
-                onLongPress={() => console.log("Pressable Long Press")}
-                style={({ pressed }) => [
-                    {
-                        backgroundColor: pressed ? 'lightgrey' : 'teal',
-                        padding: 10,
-                        borderRadius: 5,
-                    },
-                ]}
-            >
-                <Text style={{ color: "white" }}>Press Me</Text>
-            </Pressable>
+            <PressableComponent/>
         </View>
     );
 };

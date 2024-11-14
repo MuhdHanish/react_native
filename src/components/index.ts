@@ -6,3 +6,4 @@ export * from "./age";
 export * from "./social-media";
 export * from "./subject";
 export * from "./counter";
+export * from "./presseble-component";
