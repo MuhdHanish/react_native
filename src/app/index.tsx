@@ -1,6 +1,7 @@
 import React from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import { InternalStyle } from "../components";
+import { style } from "../utils/style";
 
 export default function Index() {
     return (
@@ -13,7 +14,7 @@ export default function Index() {
                 gap: "10px"
             }}
         >
-            <InternalStyle />
+            <Text style={style?.textStyle}>External Style</Text>
         </View>
     );
 };
