@@ -10,3 +10,4 @@ export * from "./presseble-component";
 export * from "./image-component";
 export * from "./profile";
 export * from "./car-card";
+export * from "./internal-style";
