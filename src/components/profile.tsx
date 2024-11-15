@@ -1,4 +1,5 @@
 import { Button, Image, Text, View } from "react-native";
+import { style } from "../utils/style";
 
 type ProfileProps = {
     profile?: any;
@@ -17,7 +18,8 @@ export const Profile = ({
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                gap: 15
+                gap: 15,
+                ...style?.shadowStyle
             }}
         >
             <Image

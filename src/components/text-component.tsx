@@ -1,5 +1,10 @@
-import { Text } from "react-native";
+import { Text, TextStyle, StyleProp } from "react-native";
 
-export const TextComponent = ({ text }: { text: string }) => {
-    return <Text>{text}</Text>;
+type TextComponentProps = {
+    style?: StyleProp<TextStyle>;
+    text: string;
+}
+
+export const TextComponent: React.FC<TextComponentProps> = ({ style, text }) => {
+    return <Text style={style}>{text}</Text>;
 };

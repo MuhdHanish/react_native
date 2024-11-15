@@ -1,3 +1,4 @@
+import { style } from "../utils/style";
 import { TextComponent } from "./text-component";
 
 export const SocialMedia = ({
@@ -7,5 +8,5 @@ export const SocialMedia = ({
     platform: string;
     username: string
 }) => {
-    return <TextComponent text={`Here is my ${platform} username: ${username}`} />
+    return <TextComponent style={style.shadowStyle} text={`Here is my ${platform} username: ${username}`} />
 };

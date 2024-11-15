@@ -1,7 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
-import { InternalStyle } from "../components";
-import { style } from "../utils/style";
+import { View } from "react-native";
+import { Age, Name, Profile, SocialMedia, Subject } from "../components";
 
 export default function Index() {
     return (
@@ -14,7 +13,19 @@ export default function Index() {
                 gap: "10px"
             }}
         >
-            <Text style={style?.textStyle}>External Style</Text>
+            <Name name="Hanish" />
+            <Age age={19} />
+            <SocialMedia platform="Instagram" username="hanish.dev" />
+            <Subject subject="Computer Science" />
+            <Profile
+                name="hanish.dev"
+                bio={`
+                • Software Engineer
+                • https://github.com/MuhdHanish
+                • https://www.linkedin.com/in/muhdhanish
+                `}
+                profile={require("../assets/Decrease_3.jpg")}
+            />
         </View>
     );
 };
