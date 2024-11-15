@@ -1,4 +1,4 @@
-import { Image, Text, View } from "react-native";
+import { Button, Image, Text, View } from "react-native";
 
 type ProfileProps = {
     profile?: any;
@@ -45,6 +45,7 @@ export const Profile = ({
                 <Text style={{ fontWeight: "bold" }}>{name}</Text>
                 {bio && <Text>{bio}</Text>}
             </View>
+            <Button title={`${"Follow"}`} />
         </View>
     );
 }
