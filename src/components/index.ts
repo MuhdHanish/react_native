@@ -18,3 +18,4 @@ export * from "./conditional-statements";
 export * from "./update-array";
 export * from "./toggle";
 export * from "./weather";
+export * from "./color-picker";
