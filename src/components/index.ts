@@ -12,3 +12,4 @@ export * from "./profile";
 export * from "./car-card";
 export * from "./internal-style";
 export * from "./flatlist-component";
+export * from "./product";
