@@ -1,10 +1,10 @@
 import { View } from "react-native";
-import { SeaFoodMeals } from "../components";
+import { RandomUsers } from "../components";
 
 export default function Index() {
     return (
         <View style={{ padding: 10 }}>
-            <SeaFoodMeals />
+            <RandomUsers />
         </View>
     );
 };
