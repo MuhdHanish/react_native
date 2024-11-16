@@ -17,3 +17,4 @@ export * from "./product-2";
 export * from "./conditional-statements";
 export * from "./update-array";
 export * from "./toggle";
+export * from "./weather";
