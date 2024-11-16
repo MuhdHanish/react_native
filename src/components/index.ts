@@ -13,3 +13,4 @@ export * from "./car-card";
 export * from "./internal-style";
 export * from "./flatlist-component";
 export * from "./product";
+export * from "./product-2";
