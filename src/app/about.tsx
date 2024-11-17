@@ -14,6 +14,7 @@ export default function About() {
             <View className="p-4 m-4 flex flex-col gap-4">
                 <Link className="text-xs text-red-400 hover:text-red-800 hover:underline w-fit" href={`/`}>Home</Link>
                 <Link className="text-xs text-red-400 hover:text-red-800 hover:underline w-fit" href={`/about`}>About</Link>
+                <Link className="text-xs text-red-400 hover:text-red-800 hover:underline w-fit" href={`/users/10`}>User</Link>
                 <Link className="text-xs text-red-400 hover:text-red-800 hover:underline w-fit" href={`/contact`}>Contact</Link>
             </View>
         </SafeAreaView>
