@@ -1,10 +1,10 @@
 import { View } from "react-native";
-import { UseReducerTodo } from "../components";
+import { UseReducerProfiles } from "../components";
 
 export default function Index() {
     return (
         <View style={{ padding: 10 }}>
-            <UseReducerTodo />
+            <UseReducerProfiles />
         </View>
     );
 };
