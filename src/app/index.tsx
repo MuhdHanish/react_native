@@ -1,10 +1,10 @@
 import { View } from "react-native";
-import { RandomUsers } from "../components";
+import { UseReducerCounter } from "../components";
 
 export default function Index() {
     return (
         <View style={{ padding: 10 }}>
-            <RandomUsers />
+            <UseReducerCounter />
         </View>
     );
 };
