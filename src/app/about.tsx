@@ -1,7 +1,6 @@
 import { Link } from "expo-router";
-import "../../global.css";
 import { SafeAreaView, StatusBar, Text, View } from "react-native";
-export default function Index() {
+export default function About() {
     return (
         <SafeAreaView>
             <StatusBar
@@ -9,8 +8,8 @@ export default function Index() {
                 backgroundColor="transparent"
                 translucent
             />
-            <Text className="bg-green-100 p-4 text-green-500 m-4 rounded">
-                Home
+            <Text className="bg-red-100 p-4 text-red-500 m-4 rounded">
+                About
             </Text>
             <View className="p-4 m-4 flex flex-col gap-4">
                 <Link className="text-xs text-red-400 hover:text-red-800 hover:underline w-fit" href={`/`}>Home</Link>
