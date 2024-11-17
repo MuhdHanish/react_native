@@ -1,10 +1,10 @@
 import { View } from "react-native";
-import { UseReducerProfiles } from "../components";
+import { Main } from "../components/prop-drilling";
 
 export default function Index() {
     return (
         <View style={{ padding: 10 }}>
-            <UseReducerProfiles />
+            <Main username="MuhdHanish"/>
         </View>
     );
 };
