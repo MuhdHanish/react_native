@@ -1,13 +1,17 @@
 import { View } from "react-native";
-import { Main } from "../components/prop-drilling";
+import { AddRandomNumber, RandomNumber } from "../components/prop-drilling";
 import { AuthProvider } from "../context/useAuth";
+import { RandomNumbersProvider } from "../context/useRandomNumber";
 
 export default function Index() {
     return (
         <AuthProvider>
-            <View style={{ padding: 10 }}>
-                <Main />
-            </View>
+            <RandomNumbersProvider>
+                <View style={{ padding: 10 }}>
+                    <RandomNumber />
+                    <AddRandomNumber />
+                </View>
+            </RandomNumbersProvider>
         </AuthProvider>
     );
 };
