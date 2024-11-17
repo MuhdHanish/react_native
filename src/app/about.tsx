@@ -1,6 +1,8 @@
 import { Link } from "expo-router";
-import { SafeAreaView, StatusBar, Text, View } from "react-native";
+import { Button, SafeAreaView, StatusBar, Text, View } from "react-native";
+import { useCounterStore } from "../store";
 export default function About() {
+    const { func, count } = useCounterStore();
     return (
         <SafeAreaView>
             <StatusBar
@@ -16,6 +18,13 @@ export default function About() {
                 <Link className="text-xs text-red-400 hover:text-red-800 hover:underline w-fit" href={`/about`}>About</Link>
                 <Link className="text-xs text-red-400 hover:text-red-800 hover:underline w-fit" href={`/users/10`}>User</Link>
                 <Link className="text-xs text-red-400 hover:text-red-800 hover:underline w-fit" href={`/contact`}>Contact</Link>
+                <View className="flex flex-col gap-5 items-center justify-center">
+                    <Text className="font-bold">{count}</Text>
+                    <View className="flex gap-5">
+                        <Button title="Increment" onPress={() => func("INC")} />
+                        <Button title="Decrement" onPress={() => func("DEC")} />
+                    </View>
+                </View>
             </View>
         </SafeAreaView>
     );
