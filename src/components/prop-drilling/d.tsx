@@ -1,10 +1,12 @@
 import React from 'react'
 import { Text, View } from 'react-native';
+import { useAuth } from '@/src/context/useAuth';
 
-export const D = ({ username }: { username: string }) => {
+export const D = () => {
+    const authState = useAuth()?.authState;
     return (
         <View>
-            <Text>{username}</Text>
+            <Text>{authState?.username}</Text>
         </View>
     );
 };
